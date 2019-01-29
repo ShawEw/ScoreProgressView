@@ -102,8 +102,8 @@
     
     
     //绘制三角形
-    CGFloat pointX = progressWidth + self.bgView.origin.x;
-    CGFloat pointY = self.bgView.origin.y;
+    CGFloat pointX = progressWidth + self.bgView.frame.origin.x;
+    CGFloat pointY = self.bgView.frame.origin.y;
     
     [self initTriangleView:pointX y:pointY];
     
@@ -115,12 +115,14 @@
     if (infoRight > score_SCREEN_WIDTH) {
         infoLeft = score_SCREEN_WIDTH - 5 - infoWidth;
     }
+    CGPoint minLabelPoint = CGPointMake(self.minLabel.center.x, self.bgView.center.y);
+    CGPoint maxLabelPoint = CGPointMake(self.maxLabel.center.x, self.bgView.center.y);
     __weak typeof(self) weakSelf = self;
     [UIView animateWithDuration:0.3 animations:^{
         weakSelf.progressView.frame = CGRectMake(0, 0, progressWidth, self.bgView.frame.size.height);
         weakSelf.infoLabel.frame = CGRectMake(infoLeft, 0, infoWidth, 15);
-        weakSelf.minLabel.centerY = self.bgView.centerY;
-        weakSelf.maxLabel.centerY = self.bgView.centerY;
+        weakSelf.minLabel.center = minLabelPoint;
+        weakSelf.maxLabel.center = maxLabelPoint;
     }];
 }
 

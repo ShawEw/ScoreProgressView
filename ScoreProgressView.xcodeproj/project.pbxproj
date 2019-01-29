@@ -13,6 +13,10 @@
 		347433E322004DE800E09591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 347433E222004DE800E09591 /* Assets.xcassets */; };
 		347433E622004DE800E09591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347433E422004DE800E09591 /* LaunchScreen.storyboard */; };
 		347433E922004DE800E09591 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 347433E822004DE800E09591 /* main.m */; };
+		347433F92200532900E09591 /* ScoreProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 347433F02200532900E09591 /* ScoreProgressView.m */; };
+		347433FA2200532900E09591 /* ScoreProgressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 347433F32200532900E09591 /* ScoreProgressModel.m */; };
+		347433FB2200532900E09591 /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 347433F52200532900E09591 /* TriangleView.m */; };
+		347433FC2200532900E09591 /* pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 347433F82200532900E09591 /* pic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		347433E522004DE800E09591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		347433E722004DE800E09591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		347433E822004DE800E09591 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		347433F02200532900E09591 /* ScoreProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreProgressView.m; sourceTree = "<group>"; };
+		347433F22200532900E09591 /* ScoreProgressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreProgressModel.h; sourceTree = "<group>"; };
+		347433F32200532900E09591 /* ScoreProgressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreProgressModel.m; sourceTree = "<group>"; };
+		347433F52200532900E09591 /* TriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
+		347433F62200532900E09591 /* TriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
+		347433F72200532900E09591 /* ScoreProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreProgressView.h; sourceTree = "<group>"; };
+		347433F82200532900E09591 /* pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,8 @@
 		347433D822004DE700E09591 /* ScoreProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				347433F82200532900E09591 /* pic.png */,
+				347433EF2200532900E09591 /* ScoreView */,
 				347433D922004DE700E09591 /* AppDelegate.h */,
 				347433DA22004DE700E09591 /* AppDelegate.m */,
 				347433DC22004DE700E09591 /* ViewController.h */,
@@ -69,6 +82,35 @@
 				347433E822004DE800E09591 /* main.m */,
 			);
 			path = ScoreProgressView;
+			sourceTree = "<group>";
+		};
+		347433EF2200532900E09591 /* ScoreView */ = {
+			isa = PBXGroup;
+			children = (
+				347433F02200532900E09591 /* ScoreProgressView.m */,
+				347433F12200532900E09591 /* Model */,
+				347433F42200532900E09591 /* View */,
+				347433F72200532900E09591 /* ScoreProgressView.h */,
+			);
+			path = ScoreView;
+			sourceTree = "<group>";
+		};
+		347433F12200532900E09591 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				347433F22200532900E09591 /* ScoreProgressModel.h */,
+				347433F32200532900E09591 /* ScoreProgressModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		347433F42200532900E09591 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				347433F52200532900E09591 /* TriangleView.m */,
+				347433F62200532900E09591 /* TriangleView.h */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +172,7 @@
 			files = (
 				347433E622004DE800E09591 /* LaunchScreen.storyboard in Resources */,
 				347433E322004DE800E09591 /* Assets.xcassets in Resources */,
+				347433FC2200532900E09591 /* pic.png in Resources */,
 				347433E122004DE700E09591 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +186,10 @@
 			files = (
 				347433DE22004DE700E09591 /* ViewController.m in Sources */,
 				347433E922004DE800E09591 /* main.m in Sources */,
+				347433FB2200532900E09591 /* TriangleView.m in Sources */,
+				347433F92200532900E09591 /* ScoreProgressView.m in Sources */,
 				347433DB22004DE700E09591 /* AppDelegate.m in Sources */,
+				347433FA2200532900E09591 /* ScoreProgressModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
