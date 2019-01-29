@@ -17,14 +17,14 @@ Pod::Spec.new do |s|
 
   s.name         = "ScoreProgressView"
   s.version      = "0.0.1"
-  s.summary      = "自定义横向显示分数进度view，通过model控制view的显示"
+  s.summary      = "自定义横向显示分数进度view"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "自定义横向显示分数进度view"
+  s.description  = "自定义横向显示分数进度view，通过model控制view的显示"
 
   s.homepage     = "https://github.com/ShawEw/ScoreProgressView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -62,7 +62,9 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios  #支持的平台
+  s.platform     = :ios, "8.0"   #平台及版本
+  s.ios.deployment_target = "8.0"     #最低系统版本
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -113,8 +115,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "Foundation","UIKit"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
