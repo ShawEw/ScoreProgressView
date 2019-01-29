@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ScoreProgressView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "自定义横向显示分数进度view"
 
   # This description is used to generate tags and improve search results.
@@ -63,8 +63,8 @@ Pod::Spec.new do |s|
 
   # s.platform     = :ios
   s.platform     = :ios  #支持的平台
-  s.platform     = :ios, "8.0"   #平台及版本
-  s.ios.deployment_target = "8.0"     #最低系统版本
+  s.platform     = :ios, "9.0"   #平台及版本
+  s.ios.deployment_target = "9.0"     #最低系统版本
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/ShawEw/ScoreProgressView.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/ShawEw/ScoreProgressView.git", :tag => "0.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
