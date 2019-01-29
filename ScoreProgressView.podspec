@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "ScoreProgressView"
   s.version      = "0.0.1"
-  s.summary      = "自定义横向显示分数进度view，通过viewmodel控制view的显示"
+  s.summary      = "自定义横向显示分数进度view，通过model控制view的显示"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "jiangjunhui" => "729845809" }
+  s.author             = { "jiangjunhui" => "729845809@qq.com" }
   # Or just: s.author    = ""
   # s.authors            = { "" => "" }
   # s.social_media_url   = "http://twitter.com/"
