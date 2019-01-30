@@ -1,7 +1,7 @@
 # ScoreProgressView
 自定义分值显示进度条
 
-![效果图](https://github.com/ShawEw/ScoreProgressView/ScoreProgressView/pic.png)  
+![效果图](https://github.com/ShawEw/ScoreProgressView/blob/master/ScoreProgressView/pic.png?raw=true)  
 
 ## 使用方法  
 ### cocoapods
