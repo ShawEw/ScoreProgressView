@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ScoreProgressView"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "自定义横向显示分数进度view"
 
   # This description is used to generate tags and improve search results.
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/ShawEw/ScoreProgressView.git", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/ShawEw/ScoreProgressView.git", :tag => "0.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ScoreProgressView/**/*.{h,m}"
+  s.source_files  = "ScoreProgressView/ScoreView/**/*.{h,m}"
 
   # s.public_header_files = "Classes/**/*.h"
 
